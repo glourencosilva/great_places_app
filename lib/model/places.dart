@@ -4,10 +4,6 @@ import 'package:equatable/equatable.dart';
 import 'package:great_places_app/model/place_location.dart';
 
 class Places extends Equatable {
-  final String id;
-  final String title;
-  final PlaceLocation location;
-  final File images;
 
   const Places({
     required this.id,
@@ -15,6 +11,10 @@ class Places extends Equatable {
     required this.location,
     required this.images,
   });
+  final String id;
+  final String title;
+  final PlaceLocation location;
+  final File images;
 
   @override
   List<Object?> get props => [id, title, location, images];
